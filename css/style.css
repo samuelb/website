@@ -104,16 +104,16 @@ p > code {
     border-color: #ececec !important;
 }
 
-.img-thumbnail {
-    display: block;
-}
-
 .img-thumbnail.horizontal {
     display: inline-block !important;
 }
 
 .img-thumbnail.spacing {
     margin: 10px;
+}
+
+figcaption {
+    font-size: 0.8em;
 }
 
 .project-image-single {
@@ -134,4 +134,14 @@ p > code {
     background-color: #FBFBFB;
     border-radius: 0.3rem;
     padding: 1rem;
+}
+
+blockquote {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--light);
+    border-left: 3px solid var(--primary);
+}
+
+blockquote > p {
+    margin: unset;
 }

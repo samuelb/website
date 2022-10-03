@@ -11,11 +11,12 @@
 		<link rel="stylesheet" href="https://reaktor23.org/css/font-awesome.min.css"/>
 		<link rel="stylesheet" href="https://reaktor23.org/css/style.css"/>
 		<link rel="stylesheet" href="https://reaktor23.org/css/opensans.css"/>
+		<link rel="stylesheet" href="https://reaktor23.org/css/featherlight.min.css"/>
 		<meta name="theme-color" content="#46b71d">
 		
 	</head>
 	<body>
-		<a href="https://github.com/reaktor23/website" class="github-corner" aria-label="View source on Github">
+		<a href="https://github.com/reaktor23/website" class="github-corner d-none d-sm-block" aria-label="View source on Github">
   <svg width="80" height="80" viewBox="0 0 250 250" style="fill: #46b71d; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
     <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
@@ -53,7 +54,7 @@
 				
 				
 				<li class="nav-item mr-3">
-					<a href="/" class="nav-link">Blog</a>
+					<a href="/blog/" class="nav-link">Blog</a>
 				</li>
 				
 				<li class="nav-item mr-3">
@@ -90,7 +91,7 @@
             </span>
             
             
-            <time datetime="2017-12-31T00:00:00&#43;00:00">2017-12-31</time>
+            <time datetime="2017-12-31">2017-12-31</time>
             
         </div>
         <div>
@@ -100,43 +101,47 @@
         </div>
     </header>
     
-    
-
-<h1 id="ansteuerung">Ansteuerung</h1>
-
+    <h1 id="ansteuerung">Ansteuerung</h1>
 <p>Auf der Platine ist bereits ein FP2800 verbaut, und alle Zeilen sind mit Hilfe des PCB auf diesen verdrahtet.
 Der andere Anschluss jedes Pixels ist mit 2 Dioden auf je eine Leiterbahn verbunden die die Spalten miteinander verbinden.</p>
-
 <p>Dieses Bild soll anhand von 4 Pixeln verdeutlichen wie die Matrix verschalten ist.
 
-<img src="pixel_wiring.png" class="img-thumbnail " width="400">
 
+<figure class="figure m-1">
+    <a href="/projects/flipdot/pixel_wiring.png" data-featherlight="image">
+        <img src="/projects/flipdot/pixel_wiring_hu1133f48d7c3069ffa4bb2813ac19b261_12158_400x0_resize_lanczos_3.png" class="figure-img img-thumbnail " width="400">
+    </a>
+    
+</figure>
 </p>
-
 <p>Dies ist die Transistorschaltung die wir momentan zum schalten der Reihen einsetzen.
 
-<img src="transistor-flipdot.png" class="img-thumbnail " width="400">
 
+<figure class="figure m-1">
+    <a href="/projects/flipdot/transistor-flipdot.png" data-featherlight="image">
+        <img src="/projects/flipdot/transistor-flipdot_hu3391ae4a44cfbcfff00ef90502e66f84_7896_400x0_resize_lanczos_3.png" class="figure-img img-thumbnail " width="400">
+    </a>
+    
+</figure>
 </p>
-
 <h1 id="bilder">Bilder</h1>
-
 
   <div class="vimeo-container">
     <iframe src="//player.vimeo.com/video/61695002" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 
 
-
 <h1 id="videos">Videos</h1>
 
 
-<img src="flip-dot.jpg" class="img-thumbnail " width="400">
-
-
+<figure class="figure m-1">
+    <a href="/projects/flipdot/flip-dot.jpg" data-featherlight="image">
+        <img src="/projects/flipdot/flip-dot_hu74d61bddc0dcafb3dec00b95cc7f8f58_1350661_400x0_resize_q80_lanczos.jpg" class="figure-img img-thumbnail " width="400">
+    </a>
+    
+</figure>
 
 <h1 id="datenblätter">Datenblätter</h1>
-
 <ul>
 <li><a href="flip.pdf">flip.pdf</a></li>
 <li><a href="fp2800-datasheet.pdf">FP2800 Datasheet</a></li>
@@ -146,18 +151,35 @@ Der andere Anschluss jedes Pixels ist mit 2 Dioden auf je eine Leiterbahn verbun
 
 		</div>
 	<footer>
-	<div class="footer-copyright text-center py-3 text-muted">
-		<a href="/impressum/" class="text-muted">Impressum / Datenschutz</a>
-		
-		<span class="px-2">&bull;</span>
-		<a href="https://github.com/reaktor23"><i class="fa fa-github text-muted" style="font-size: 1.25rem;" aria-hidden="true"></i></a>
-		<br>
-		<span style="font-size: 0.7em;">build time: 2019-09-13 18:21</span>
-	</div>
+    <div class="footer-copyright text-center py-3 text-muted">
+            <a href="/impressum/" class="text-muted">Impressum / Datenschutz</a>
+
+        
+            <div class="d-sm-inline">
+                <span class="px-2 d-none d-sm-inline">&bull;</span>
+                <i class="fa fa-rss text-muted mr-1" style="font-size: 1.25rem" aria-hidden="true"></i>
+                
+                    <a href="/index.xml" class="text-muted">All</a>
+                 | 
+                    <a href="/blog/index.xml" class="text-muted">Blog</a>
+                 | 
+                    <a href="/projects/index.xml" class="text-muted">Projects</a>
+                </div><span class="px-2 d-none d-sm-inline">&bull;</span>
+
+        <a href="https://github.com/reaktor23">
+            <i class="fa fa-github text-muted" style="font-size: 1.25rem;" aria-hidden="true"></i>
+        </a>
+
+        <br />
+
+        <span style="font-size: 0.7em;">build time: 2022-10-03 23:39 UTC</span>
+    </div>
 </footer>
 
 	<script src="https://reaktor23.org/js/jquery.min.js"></script>
+<script src="https://reaktor23.org/js/showdown.min.js"></script>
 <script src="https://reaktor23.org/js/bootstrap.min.js"></script>
+<script src="https://reaktor23.org/js/featherlight.min.js"></script>
 <script src="https://reaktor23.org/js/reaktorstatus.js"></script>
 <script src="https://reaktor23.org/js/talks.js"></script>
 
